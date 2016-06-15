@@ -1,6 +1,6 @@
 Param(
 	[string]$buildNumber = "0",
-	[string]$preRelease = $null
+	[string]$preRelease = "beta8"
 )
 
 gci .\source -Recurse "packages.config" |% {

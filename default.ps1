@@ -73,9 +73,9 @@ task CreateNuGetPackage -depends Compile {
   md $dist_directory\lib
   md $dist_directory\lib\net45
   
-  copy-item $src_directory\IdentityServer3.Admin.EntityFramework\IdentityServer3.Admin.EntityFramework.nuspec $dist_directory
-  copy-item $output_directory\IdentityServer3.Admin.EntityFramework.dll $dist_directory\lib\net45
-  copy-item $output_directory\IdentityServer3.Admin.EntityFramework.pdb $dist_directory\lib\net45
+  copy-item $src_directory\IdentityServer3.Admin.EntityFramework\IdentityServer3.Admin.EntityFramework.MySql.nuspec $dist_directory
+  copy-item $output_directory\IdentityServer3.Admin.EntityFramework.MySql.dll $dist_directory\lib\net45
+  copy-item $output_directory\IdentityServer3.Admin.EntityFramework.MySql.pdb $dist_directory\lib\net45
 
-	exec { . $nuget_path pack $dist_directory\IdentityServer3.Admin.EntityFramework.nuspec -BasePath $dist_directory -o $dist_directory -version $packageVersion }
+	exec { . $nuget_path pack $dist_directory\IdentityServer3.Admin.EntityFramework.MySql.nuspec -BasePath $dist_directory -o $dist_directory -version $packageVersion }
 }

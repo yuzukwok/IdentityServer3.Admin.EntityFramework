@@ -55,8 +55,8 @@
       <HintPath>..\packages\IdentityServer3.Admin.1.0.0-beta8\lib\net45\IdentityServer3.Admin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="IdentityServer3.EntityFramework, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\IdentityServer3.EntityFramework.2.5.0\lib\net45\IdentityServer3.EntityFramework.dll</HintPath>
+    <Reference Include="IdentityServer3.EntityFramework.MySql, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IdentityServer3.EntityFramework.MySql.2.5.0\lib\net45\IdentityServer3.EntityFramework.MySql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
